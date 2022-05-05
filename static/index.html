@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!url.includes('https://')) {
             alert('copy a url from the browser then click the button')
         } else {
-            const response = await fetch('http://localhost:8080/', {
+            const response = await fetch('https://qrcodesnobs.herokuapp.com/', {
                 method: 'POST',
                 body: url
             });
