@@ -19,4 +19,5 @@ app.use(async (ctx, next) => {
 app.use(router.routes());
 
 console.log('listening on port 8080');
-await app.listen({ port: 8000 });
+const portl = Number(Deno.env.get("PORT")) || 8080;
+await app.listen({ port: portl});
