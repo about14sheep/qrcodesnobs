@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         const text = document.getElementById('textBox').value
         document.getElementById('urlPlace').textContent = text
-        const response = await fetch('https://qrcodesnobs.com/', {
+        const response = await fetch('https://www.qrcodesnobs.com/', {
             method: 'POST',
             body: text
         });
