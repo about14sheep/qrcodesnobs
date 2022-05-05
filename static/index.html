@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const makeButton = document.querySelector('.maker');
     makeButton.addEventListener('click', async e => {
         e.preventDefault();
-        const response = await fetch('http://localhost:8000/', {
+        const response = await fetch('http://qrcodesnobs.herokuapp.com/', {
             method: 'POST',
             body: document.querySelector('.urlPlace').value
         });
